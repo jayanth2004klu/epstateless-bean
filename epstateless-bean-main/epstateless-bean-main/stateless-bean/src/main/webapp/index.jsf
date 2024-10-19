@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Calculator</title>
+</h:head>
+<h:body>
+    <h3>Addition</h3>
+    <h:form>
+        <p>A: <h:inputText value="#{calc.a}" /></p>
+        <p>B: <h:inputText value="#{calc.b}" /></p>
+        <p>Result C: #{calc.c}</p>
+        <h:commandButton action="#{calc.callEjbAdd()}" value="Add" />
+    </h:form>
+    
+    <h3>Subtraction</h3>
+    <h:form>
+        <p>A: <h:inputText value="#{calc.a}" /></p>
+        <p>B: <h:inputText value="#{calc.b}" /></p>
+        <p>Result C: #{calc.c}</p>
+        <h:commandButton action="#{calc.callEjbSub()}" value="Sub" />
+    </h:form>
+</h:body>
+</html>
